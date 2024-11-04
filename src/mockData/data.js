@@ -20,3 +20,21 @@ export const NavbarMenu = [
         link: "#"
     },
 ]
+
+export const CarouselData = [
+    {
+        index: 1,
+        image: "../public/images/cocina/cocina_1.jpg",
+        alt: "Cocina 1",
+    },
+    {
+        index: 2,
+        image: "../public/images/cocina/cocina_2.jpg",
+        alt: "Cocina 2",
+    },
+    {
+        index: 3,
+        image: "../public/images/cocina/cocina_3.jpg",
+        alt: "Cocina 3",
+    },
+]

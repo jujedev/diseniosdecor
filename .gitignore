@@ -1,0 +1,46 @@
+# Dependencias de Node.js
+node_modules/
+
+# Archivos de construcción
+dist/
+
+# Archivos de lock de paquetes
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Archivos de configuración de Vite
+.vite/
+.vitepress/
+*.env
+*.env.local
+*.env.*.local
+
+# Archivos de configuración específicos de la aplicación
+vite.config.js
+vite.config.ts
+
+# Archivos de configuración de PostCSS y TailwindCSS
+postcss.config.js
+tailwind.config.js
+
+# Directorio de salida (usualmente para preprocesadores como Sass o Less)
+build/
+
+# Archivos de Log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Archivos de configuración del editor y sistema operativo
+.DS_Store
+.idea/
+.vscode/
+*.sublime-workspace
+
+# Configuración de ESLint y Prettier
+.eslintcache
+eslint.config.js
+.prettierrc
+prettier.config.js
+
