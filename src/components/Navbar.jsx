@@ -9,10 +9,36 @@ import { PiShoppingCartThin } from 'react-icons/pi';
 
 const Navbar = () => {
   const [open, setOpen] = React.useState(false);
+  const [isVisible, setIsVisible] = React.useState(true);
+  const [lastScrollY, setLastScrollY] = React.useState(0);
+
+  React.useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+
+      if (currentScrollY > lastScrollY && currentScrollY > 50) {
+        // Ocultar navbar al hacer scroll hacia abajo
+        setIsVisible(false);
+      } else {
+        // Mostrar navbar al hacer scroll hacia arriba
+        setIsVisible(true);
+      }
+
+      setLastScrollY(currentScrollY);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, [lastScrollY]);
+
   return (
     <>
-      <nav>
-        <div className="container flex justify-between items-center py-8">
+      {/*<nav className='bg-red-300 w-full fixed -scroll-mr-9'>*/}
+      <nav className={`fixed top-0 left-0 w-full transition-transform duration-300 ${isVisible ? 'translate-y-0' : '-translate-y-full'} bg-white`}>
+        <div className="container flex justify-between items-center py-6">
           {/* Logo section */}
           <div className='text-2xl flex items-center gap-2 font-bold uppercase'>
             <FaDumbbell />
@@ -57,5 +83,47 @@ const Navbar = () => {
     </>
   );
 };
+
+/*
+import React, { useState, useEffect } from 'react';
+
+function Navbar() {
+  const [isVisible, setIsVisible] = useState(true);
+  const [lastScrollY, setLastScrollY] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+
+      if (currentScrollY > lastScrollY && currentScrollY > 50) {
+        // Ocultar navbar al hacer scroll hacia abajo
+        setIsVisible(false);
+      } else {
+        // Mostrar navbar al hacer scroll hacia arriba
+        setIsVisible(true);
+      }
+
+      setLastScrollY(currentScrollY);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, [lastScrollY]);
+
+  return (
+    <nav className={`fixed top-0 left-0 w-full transition-transform duration-300 ${isVisible ? 'translate-y-0' : '-translate-y-full'} bg-blue-500`}>
+      <div className="container mx-auto px-4 py-3 text-white">
+        { Contenido de la Navbar }
+        <h1>Navbar</h1>
+      </div>
+    </nav>
+  );
+}
+
+export default Navbar;
+*/
 
 export default Navbar;

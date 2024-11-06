@@ -13,7 +13,7 @@ const ResponsiveMenu = ({ open }) => {
                         exit={{ opacity: 0, y: -100 }}
                         className="absolute top-20 left-0 w-full h-screen z-20"
                     >
-                        <div className="text-xl font-semibold uppercase bg-primary text-white py-10 m-6 rounded-3xl">
+                        <div className="text-xl font-semibold uppercase bg-white text-primary py-10">
                             <ul className="flex flex-col justify-center items-center gap-10">
                                 <li className="hover:scale-105"><a href="/">Inicio</a></li>
                                 <li className="hover:scale-105"><a href="#">Quienes somos</a></li>

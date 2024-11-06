@@ -1,19 +1,16 @@
 import React from "react";
 import Navbar from "./components/Navbar";
-import CarouselComponent from "./components/CarouselComponent";
 
-import { CarouselData } from "./mockData/data";
 
 function App() {
 
   return (
-    <>
-      <Navbar />
-      <div>
-        <CarouselComponent images={CarouselData}/>
-      </div>
-      
-    </>
+    <div className="relative h-screen">
+        <Navbar />
+        <div className="pt-16 h-full">
+          <img src="../public/images/cocina/cocina_1.jpg" className="h-full object-cover w-full"/>
+        </div>
+    </div>
   )
 }
 
