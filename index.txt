@@ -1,29 +1,3 @@
-
-#---------- HERO ----------#
-
-Find a place where you can be yourself.
-
-If you're looking for a place where you can be yourself, don't give up. Keep searching until you find a place that feels like home.
-
-Want to
-
-Buy
-Sell
-Rent
-
-<span class="material-symbols-rounded" aria-hidden="true">real_estate_agent</span>
-
-Property type
-Any
-Houses
-Apartments
-Villa
-Townhome
-Bungalow
-Loft
-
-<span class="material-symbols-rounded" aria-hidden="true">gite</span>
-
 Location
 placeholder = Street, City, Zip...
 
