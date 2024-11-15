@@ -1,15 +1,3 @@
-
-#---------- FEATURE ----------#
-
-alt = feature banner
-
-We Specialize In Quality Home Renovations
-
-Looking to renovate your home to reflect your style and personality? Look no further than our team of experts who specialize in quality home renovations to transform your space into a dream home you’ll love. From design to execution.
-
-<span class="material-symbols-rounded feature-icon" aria-hidden="true">check_circle</span>
-
-Smart Home
 Beautiful Scene Around
 Exceptional lifestyle
 Complete 24/7 Security
