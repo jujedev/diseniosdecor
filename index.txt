@@ -1,84 +1,38 @@
-Beautiful Scene Around
-Exceptional lifestyle
-Complete 24/7 Security
-
-We Are Experts In Historic Home Renovations
-
-Looking to renovate your home to reflect your style and personality? Look no further than our team of experts who specialize in quality home renovations to transform your space into a dream home you’ll love. From design to execution.
-
-Smart Home
-Beautiful Scene Around
-Exceptional lifestyle
-Complete 24/7 Security
-
-alt = feature banner
-
-
-
-#---------- VIDEO ----------#
-
-aria-label = play video
-<span class="material-symbols-rounded" aria-hidden="true">play_arrow</span>
-
-
-
-#---------- STORY ----------#
-
-Our Customers
-
-We Help 1000+ Family Find Their True Home
-
-alt = John smith
-alt = Jane smith
-
-99+
-
-View All Stories
-
-<span class="material-symbols-rounded" aria-hidden="true">arrow_outward</span>
-
-Chris Traeger
-
-<span class="material-symbols-rounded" aria-hidden="true">star</span>
-5.0
-
-alt = Chris Traeger
-
 Duke Silver
 
 <span class="material-symbols-rounded" aria-hidden="true">star</span>
 5.0
 
 alt = Duke Silver
-
+/==============================================================
 Tsukasa Aoi
 
 <span class="material-symbols-rounded" aria-hidden="true">star</span>
 5.0
 
 alt = Tsukasa Aoi
-
+/==============================================================
 Freida Varnes
 
 <span class="material-symbols-rounded" aria-hidden="true">star</span>
 5.0
 
 alt = Freida Varnes
-
+/==============================================================
 Carl Lorthner
 
 <span class="material-symbols-rounded" aria-hidden="true">star</span>
 5.0
 
 alt = Carl Lorthner
-
+/==============================================================
 Marci Senter
 
 <span class="material-symbols-rounded" aria-hidden="true">star</span>
 5.0
 
 alt = Marci Senter
-
+/==============================================================
 
 
 
