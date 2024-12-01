@@ -18,6 +18,7 @@
   --yellow: #F6BD26;
 
   --primary-100: #8B572A; /* Marrón claro */
+  --primary-95: #8B5E3C; /* Marrón claro */
   --primary-90: #7A4D25; /* Marrón medio-claro */
   --primary-80: #6A4421; /* Marrón medio */
   --primary-70: #5A3B1C; /* Marrón oscuro */
@@ -187,6 +188,10 @@ body {
   font-size: var(--fs-body-medium);
   line-height: var(--lh-body-medium);
   height: 300vh;
+}
+
+.contactme {
+  height: 100vh;
 }
 
 ::-webkit-scrollbar {
@@ -513,8 +518,9 @@ body {
 .header.active {
   animation: slide_in 500ms ease forwards;
   height: 72;
-  background-color: var(--primary-70);
+  background-color: var(--primary-95);
 }
+
 
 @keyframes slide_in {
   0% { transform: translateY(-100%); }
@@ -603,6 +609,15 @@ body {
   background-image: var(--gradient);
   color: var(--neutral-90);
   padding-block: 130px 60px;
+  overflow: hidden;
+  isolation: isolate;
+}
+
+.hero-contactme {
+  position: relative;
+  background-image: var(--gradient);
+  color: var(--neutral-90);
+  padding-block: 40px 60px;
   overflow: hidden;
   isolation: isolate;
 }
@@ -933,6 +948,71 @@ body {
   padding-block: 20px;
   display: grid;
   justify-content: center;
+}
+
+
+/*-----------------------------------*\
+  #PAGE CONTACT ME
+\*-----------------------------------*/
+
+.container-2 {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: center;
+
+}
+
+.container-map {
+  padding: 10px;
+}
+
+.contact-form {
+  display: flex;
+  justify-content: center;
+}
+
+form {
+  margin: 20px;
+  padding: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  border-radius: var(--radius-large);
+  text-align: center;
+  width: 340px;
+  height: 600px;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.input-group label {
+  margin: 4px;
+}
+
+.input-group input {
+  padding: 8px;
+  margin: 4px;
+  border-radius: var(--radius-small);
+  border: 1px solid var(--neutral-90);
+}
+
+.location {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;  
+  text-align: center;
+}
+
+.location-map {
+  width: 340px;
+  height: 600px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
 }
 
 /*-----------------------------------*\
